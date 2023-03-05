@@ -9,17 +9,50 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Http;
 using Newtonsoft.Json;
+using Microsoft.CognitiveServices.Speech;
+using Microsoft.CognitiveServices.Speech.Audio;
 
 
 namespace ProjRoboTech23
 {
+   
+
     public partial class Form1 : Form
     {
+
+        public string x;
+       
         OptionForm f = new OptionForm();
         public Form1()
         {
             InitializeComponent();
         }
+
+        private async Task SynthesizeSpeechAsync(string text)
+        {
+            string subscriptionKey = "0d13e772a2db43c99b01a365f895d55c";
+            string region = "eastus";
+
+            // Set up the speech config with your subscription key and region
+            var config = SpeechConfig.FromSubscription(subscriptionKey, region);
+
+            // Create a new SpeechSynthesizer instance with the SpeechConfig
+            var synthesizer = new SpeechSynthesizer(config);
+
+            using (var result = await synthesizer.SpeakTextAsync(text))
+            {
+                if (result.Reason == ResultReason.SynthesizingAudioCompleted)
+                {
+                    // Playback the audio using your preferred audio player
+                }
+                else if (result.Reason == ResultReason.Canceled)
+                {
+                    var cancellation = SpeechSynthesisCancellationDetails.FromResult(result);
+                    // Handle canceled synthesis requests
+                }
+            }
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -53,6 +86,7 @@ namespace ProjRoboTech23
                     if (joke != null && joke.joke != null)
                     {
                         label2.Text = joke.joke;
+                        x = joke.joke;
                     }
                 }
                 else
@@ -108,7 +142,7 @@ namespace ProjRoboTech23
 
                 // Display the joke in the label
                 label5.Text = joke.joke;
-
+            x = joke.joke;
                 /*
                 using (var client = new HttpClient())
                 {
@@ -152,6 +186,16 @@ namespace ProjRoboTech23
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            await SynthesizeSpeechAsync("Hello, World!");
+        }
+
+        private async void pictureBox1_Click(object sender, EventArgs e)
+        {
+            await SynthesizeSpeechAsync(x);
         }
     }
     public class Joke
