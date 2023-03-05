@@ -5,7 +5,7 @@ people's faces and making them feel better. We decided to approach the Mental He
 
 Multiple research studies prove how laughter helps a person's mental and physical well-being. It has been determined that laughter increases the endorphins released by
 your brain, increases heart and blood rates, and helps in muscle relaxation; all of which reduce stress levels. Laughter also benefits a person's physical health,
-lowering the risk of or helping fight illnesses such as coronary heart disease, Parkinson's disease, and rheumatoid arthritis.
+lowering the risk of or helping fight illnesses such as coronary heart disease, Parkinson's disease, and rheumatoid arthritis. [^1]
 
 
 ## About our Project - HumorAI
@@ -18,3 +18,5 @@ The technologies, skills, and languages used in this project are:
 - Unity (VR and Game Development)
 - C#
   
+
+[^1]: https://www.va.gov/WHOLEHEALTHLIBRARY/tools/healing-benefits-humor-laughter.asp. 
