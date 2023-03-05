@@ -9,9 +9,7 @@ lowering the risk of or helping fight illnesses such as coronary heart disease, 
 
 
 ## About our Project - HumorAI
-Our project is a Windows Application that generates a joke on the screen and allows the user to choose a celebrity from a dropdown list to voice the joke on the screen.
-The user can utilize VR to create immersive therapeutic environments for individuals struggling with mental health issues. By incorporating humor and laughter into these
-environments, users may experience reduced stress, anxiety, and depression. 
+Our project is a Windows Application that generates a joke on the screen based on the options selected. The user can select what type of joke they would not want to see from a list of six options. Additionally, they can utilize VR to create immersive therapeutic environments for individuals struggling with mental health issues. By incorporating humor and laughter into these environments, users may experience reduced stress, anxiety, and depression. 
 
 The technologies, skills, and languages used in this project are:
 - Humor API
