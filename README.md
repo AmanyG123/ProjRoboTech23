@@ -1,5 +1,5 @@
 # RoboTech 2023
-## The Mental Health Theme
+## HumorAI
 Medicines have evolved and changed for thousands of years, yet only one has always remained the same. Laughter has proved itself time and time again, never 
 failing to put a smile on people's faces and making them feel better. So, we decided to approach the Mental Health theme of RoboTech with the idea that 
 laughter is the best medicine. 
