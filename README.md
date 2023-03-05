@@ -1,8 +1,7 @@
 # RoboTech 2023
 ## Mental Health
-Medicines have evolved and changed for thousands of years, yet only one has remained the same. Laughter has proved itself time and time again, always  
-putting a smile on people's faces and making them feel better. We decided to approach the Mental Health theme of RoboTech with the idea that laughter is the best
-medicine. 
+Medicines have evolved and changed for thousands of years, yet only one has remained the same. Laughter has proved itself time and time again, always putting a smile on
+people's faces and making them feel better. We decided to approach the Mental Health theme of RoboTech with the idea that laughter is the best medicine. 
 
 Multiple research studies prove how laughter helps a person's mental and physical well-being. It has been determined that laughter increases the endorphins released by
 your brain, increases heart and blood rates, and helps in muscle relaxation; all of which reduce stress levels. Laughter also benefits a person's physical health,
